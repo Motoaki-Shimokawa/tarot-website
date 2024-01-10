@@ -9,7 +9,7 @@ function selectRandomCards(count) {
     const totalCards = 89;
     let cards = [];
     for (let i = 1; i <= totalCards; i++) {
-        cards.push(`card${i}.jpg`);
+        cards.push(`https://raw.githubusercontent.com/Motoaki-Shimokawa/tarot-website/main/card${i}.jpg`);
     }
     const shuffled = cards.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
@@ -22,7 +22,7 @@ function displayCards(cardFileNames) {
     cardFileNames.forEach(fileName => {
         const cardElement = document.createElement('div');
         cardElement.className = 'card';
-        cardElement.style.backgroundImage = `url('https://github.com/Motoaki-Shimokawa/tarot-website/blob/main/${fileName}')`;
+        cardElement.style.backgroundImage = `url('${fileName}')`;
         container.appendChild(cardElement);
     });
 }
