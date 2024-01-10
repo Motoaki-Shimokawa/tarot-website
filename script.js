@@ -22,7 +22,7 @@ function displayCards(cardFileNames) {
     cardFileNames.forEach(fileName => {
         const cardElement = document.createElement('div');
         cardElement.className = 'card';
-        cardElement.style.backgroundImage = `url('images/${fileName}')`;
+        cardElement.style.backgroundImage = `url('https://github.com/Motoaki-Shimokawa/tarot-website/blob/main/${fileName}')`;
         container.appendChild(cardElement);
     });
 }
