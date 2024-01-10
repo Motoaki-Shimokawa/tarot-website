@@ -12,8 +12,8 @@ body {
 }
 
 .card {
-    width: 100px;
-    height: 160px;
+    width: 200px; /* サイズを大きく */
+    height: 320px; /* サイズを大きく */
     border: 1px solid #ddd;
     background-size: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -27,7 +27,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 20px 2px; /* 余白を調整 */
     cursor: pointer;
     border: none;
     border-radius: 4px;
