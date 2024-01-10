@@ -10,8 +10,8 @@ body {
 }
 
 h1 {
-    font-size: 2.5em;
-    color: #d4ba8c; /* ベージュっぽい色に変更 */
+    font-size: 3em; /* タイトルのフォントサイズを大きくする */
+    color: #000000; /* タイトルの文字色を黒にする */
 }
 
 #cards-container {
