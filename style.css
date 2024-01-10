@@ -5,6 +5,7 @@ body {
     background-image: url('https://raw.githubusercontent.com/Motoaki-Shimokawa/tarot-website/main/background-image.jpg'); /* GitHubリポジトリの背景画像URL */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* 背景画像を固定 */
 }
 
 #cards-container {
