@@ -1,8 +1,14 @@
 document.getElementById('draw-button').addEventListener('click', function() {
     const selectedCards = selectRandomCards(3);
     displayCards(selectedCards);
-    this.style.opacity = '0.6'; // ボタンを暗くする
-    this.disabled = true;       // ボタンを非活性化
+    this.style.display = 'none'; // 「カードを引く」ボタンを隠す
+    document.getElementById('reset-button').style.display = 'block'; // 「戻る」ボタンを表示
+});
+
+document.getElementById('reset-button').addEventListener('click', function() {
+    document.getElementById('cards-container').innerHTML = ''; // カードをクリア
+    this.style.display = 'none'; // 「戻る」ボタンを隠す
+    document.getElementById('draw-button').style.display = 'block'; // 「カードを引く」ボタンを表示
 });
 
 function selectRandomCards(count) {
