@@ -1,17 +1,17 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* より読みやすいフォント */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
     background-image: url('https://raw.githubusercontent.com/Motoaki-Shimokawa/tarot-website/main/background-image.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #333; /* より読みやすい文字色 */
+    color: #333;
 }
 
 h1 {
-    font-size: 2.5em; /* タイトルのフォントサイズを大きく */
-    color: #4CAF50; /* タイトルの色 */
+    font-size: 2.5em;
+    color: #d4ba8c; /* ベージュっぽい色に変更 */
 }
 
 #cards-container {
@@ -22,8 +22,8 @@ h1 {
 }
 
 .card {
-    width: 150px; /* 画像サイズを調整 */
-    height: 240px; /* 画像サイズを調整 */
+    width: 150px;
+    height: 240px;
     border: 1px solid #ddd;
     background-size: cover;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -36,7 +36,7 @@ button {
     text-align: center;
     text-decoration: none;
     display: block;
-    font-size: 1.2em; /* ボタンのフォントサイズを調整 */
+    font-size: 1.2em;
     margin: 20px auto;
     cursor: pointer;
     border: none;
