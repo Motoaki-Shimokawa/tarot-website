@@ -1,19 +1,22 @@
+/* 基本的なボディのスタイリング */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 読みやすいフォント */
     text-align: center;
-    background-color: #f4f4f4;
-    background-image: url('https://raw.githubusercontent.com/Motoaki-Shimokawa/tarot-website/main/background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #333;
+    background-color: #f4f4f4; /* 背景色 */
+    background-image: url('https://raw.githubusercontent.com/Motoaki-Shimokawa/tarot-website/main/background-image.jpg'); /* 背景画像 */
+    background-size: cover; /* 背景画像のサイズをカバーに設定 */
+    background-position: center; /* 背景画像を中央に配置 */
+    background-attachment: fixed; /* 背景画像を固定 */
+    color: #333; /* テキストの色 */
 }
 
+/* タイトルのスタイリング */
 h1 {
     font-size: 3em; /* タイトルのフォントサイズを大きくする */
     color: #000000; /* タイトルの文字色を黒にする */
 }
 
+/* カードコンテナのスタイリング */
 #cards-container {
     display: flex;
     justify-content: center;
@@ -21,37 +24,42 @@ h1 {
     margin-top: 20px;
 }
 
+/* 個々のカードのスタイリング */
 .card {
-    width: 150px;
-    height: 240px;
-    border: 1px solid #ddd;
-    background-size: cover;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 150px; /* カードの幅 */
+    height: 240px; /* カードの高さ */
+    border: 1px solid #ddd; /* カードの境界線 */
+    background-size: cover; /* 背景のサイズをカバーに設定 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* カードに影を追加 */
 }
 
+/* ボタンのスタイリング */
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50; /* ボタンの背景色 */
+    color: white; /* ボタンのテキスト色 */
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: block;
-    font-size: 1.2em;
-    margin: 20px auto;
+    display: block; /* ボタンをブロック要素に設定 */
+    font-size: 1.2em; /* ボタンのフォントサイズ */
+    margin: 20px auto; /* 上下の余白と自動マージン */
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ボタンに影を追加 */
 }
 
+/* ボタンのホバー効果 */
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* ホバー時の背景色 */
 }
 
+/* リセットボタンのスタイリング */
 #reset-button {
-    background-color: #f44336;
+    background-color: #f44336; /* リセットボタンの背景色 */
 }
 
+/* リセットボタンのホバー効果 */
 #reset-button:hover {
-    background-color: #d32f2f;
+    background-color: #d32f2f; /* ホバー時の背景色 */
 }
