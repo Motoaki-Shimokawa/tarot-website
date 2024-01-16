@@ -1,15 +1,11 @@
 document.getElementById('draw-button').addEventListener('click', function() {
-    const selectedCards = selectRandomCards(3);
-    displayCards(selectedCards);
-    this.style.display = 'none'; // 「カードを引く」ボタンを隠す
-    document.getElementById('reset-button').style.display = 'block'; // 「戻る」ボタンを表示
+    const selectedCard = selectRandomCards(1); // 1枚のカードを選択
+    displayCards(selectedCard);
+    this.style.display = 'none'; // 「カードを引く」ボタンを非表示にする
+    document.getElementById('meditation-card-button').style.display = 'block'; // 「天符経瞑想カードはこちら」ボタンを表示
 });
 
-document.getElementById('reset-button').addEventListener('click', function() {
-    document.getElementById('cards-container').innerHTML = ''; // カードをクリア
-    this.style.display = 'none'; // 「戻る」ボタンを隠す
-    document.getElementById('draw-button').style.display = 'block'; // 「カードを引く」ボタンを表示
-});
+document.getElementById('meditation-card-button').style.display = 'none'; // 初期状態では非表示にする
 
 function selectRandomCards(count) {
     const totalCards = 89;
@@ -32,3 +28,8 @@ function displayCards(cardFileNames) {
         container.appendChild(cardElement);
     });
 }
+
+// 「天符経瞑想カードはこちら」ボタンのクリックイベント
+document.getElementById('meditation-card-button').addEventListener('click', function() {
+    window.location.href = 'https://www.ilchihspshop.com/shop/shopdetail.html?brandcode=006000000018&search=%C5%B7%C9%E4%B7%D0&sort=';
+});
