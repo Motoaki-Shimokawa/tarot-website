@@ -26,40 +26,31 @@ h1 {
 
 /* 個々のカードのスタイリング */
 .card {
-    width: 150px; /* カードの幅 */
-    height: 240px; /* カードの高さ */
-    border: 1px solid #ddd; /* カードの境界線 */
-    background-size: cover; /* 背景のサイズをカバーに設定 */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* カードに影を追加 */
+    width: 200px; /* カードの幅を大きくする */
+    height: 300px; /* カードの高さを大きくする */
+    border: 1px solid #ddd;
+    background-size: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ボタンのスタイリング */
+/* ボタンの共通スタイリング */
 button {
     background-color: #4CAF50; /* ボタンの背景色 */
     color: white; /* ボタンのテキスト色 */
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block; /* ボタンをブロック要素に設定 */
-    font-size: 1.2em; /* ボタンのフォントサイズ */
-    margin: 20px auto; /* 上下の余白と自動マージン */
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
+    padding: 15px 32px; /* パディング */
+    text-align: center; /* テキストを中央揃え */
+    text-decoration: none; /* テキストの装飾をなしに */
+    display: block; /* ボタンをブロック要素として表示 */
+    font-size: 1em; /* フォントサイズ */
+    margin: 20px auto; /* 上下の余白と左右の自動マージン */
+    cursor: pointer; /* カーソルをポインターに */
+    border: none; /* 境界線なし */
+    border-radius: 4px; /* 境界線の角を丸く */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ボタンに影を追加 */
 }
 
 /* ボタンのホバー効果 */
 button:hover {
-    background-color: #45a049; /* ホバー時の背景色 */
+    background-color: #45a049; /* ホバー時の背景色変更 */
 }
 
-/* リセットボタンのスタイリング */
-#reset-button {
-    background-color: #f44336; /* リセットボタンの背景色 */
-}
-
-/* リセットボタンのホバー効果 */
-#reset-button:hover {
-    background-color: #d32f2f; /* ホバー時の背景色 */
-}
