@@ -19,7 +19,8 @@ function selectRandomCards(count) {
 
 function displayCards(cardFileNames) {
     const container = document.getElementById('cards-container');
-    container.innerHTML = '';
+    container.innerHTML = ''; // カードコンテナをクリア
+    document.getElementById('card-back').style.display = 'none'; // 裏面画像を非表示にする
 
     cardFileNames.forEach(fileName => {
         const cardElement = document.createElement('div');
