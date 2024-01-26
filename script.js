@@ -8,7 +8,7 @@ document.getElementById('draw-button').addEventListener('click', function() {
 document.getElementById('meditation-card-button').style.display = 'none'; // 初期状態では非表示にする
 
 function selectRandomCards(count) {
-    const totalCards = 89;
+    const totalCards = 45; // カードの枚数を45枚に変更
     let cards = [];
     for (let i = 1; i <= totalCards; i++) {
         cards.push(`https://raw.githubusercontent.com/Motoaki-Shimokawa/tarot-website/main/card${i}.jpg`);
