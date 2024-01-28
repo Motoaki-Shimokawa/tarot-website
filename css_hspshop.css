@@ -26,8 +26,8 @@ h1 {
 
 /* 個々のカードのスタイリング */
 .card {
-    width: 500px; /* カードの幅 */
-    height: 750px; /* カードの高さ */
+    width: 250px; /* カードの幅 */
+    height: 375px; /* カードの高さ */
     border: 1px solid #ddd; /* カードの境界線 */
     background-size: cover; /* 背景のサイズをカバーに設定 */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* カードに影を追加 */
